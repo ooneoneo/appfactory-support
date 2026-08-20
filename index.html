@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>APP_FACTORY — Integritet & Support</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1d1d1f; line-height: 1.6; }
+    h1 { color: #2356C4; } h2 { margin-top: 2rem; color: #2356C4; }
+    code { background:#f2f2f7; padding:2px 4px; border-radius:4px; }
+    footer { margin-top:3rem; font-size:.85rem; color:#6e6e73; }
+  </style>
+</head>
+<body>
+  <h1>APP_FACTORY — Integritet &amp; Support</h1>
+  <p>Detta är den gemensamma webbplatsen för integritetspolicy och support för alla
+  APP_FACTORY-verktygsappar (Skift &amp; Lön, Kvitto &amp; Garanti, Abonnemang, Intervalltimer,
+  Packlista, Varvräknare, Parkering).</p>
+
+  <h2>Lokal-först (Local-first)</h2>
+  <p>Alla APP_FACTORY-appar är <strong>lokala</strong>. Dina data (skift, kvitton, prenumerationer,
+  timer, listor, projekt, parkeringsplatser) lagras <strong>enbart på din egen enhet</strong> via
+  lokal SQLite. Ingen inloggning krävs och ingen användardata skickas till våra servrar.</p>
+
+  <h2>Köp i appen (IAP) &amp; RevenueCat</h2>
+  <p>Pro-uppgraderingar hanteras via Apples App Store och <strong>RevenueCat</strong> (entitlement-validering).
+  Vi lagrar inga kortuppgifter. Köphistorik hanteras av Apple/RevenueCat enligt deras integritetspolicyer.</p>
+
+  <h2>Kamera &amp; plats (endast berörda appar)</h2>
+  <ul>
+    <li><strong>Kamera</strong> (Kvitto &amp; Garanti, Parkering): används bara när du själv fotar ett kvitto eller fordon. Bilder lagras lokalt.</li>
+    <li><strong>Plats</strong> (Parkering): endast i förgrunden (WhenInUse) när du parkerar, för att visa avstånd till bilen. Ingen bakgrundspositionering.</li>
+  </ul>
+
+  <h2>Per-app integritetsnoteringar</h2>
+  <ul>
+    <li><strong>Skift &amp; Lön</strong>: inga känsliga behörigheter; lokal påminnelse för pass.</li>
+    <li><strong>Kvitto &amp; Garanti</strong>: kamerabehörighet (lokal).</li>
+    <li><strong>Abonnemang</strong>: lokala påminnelser för förnyelse.</li>
+    <li><strong>Intervalltimer</strong>: ljud/haptik vid träning; lokal timer.</li>
+    <li><strong>Packlista</strong>: lokal delning av lista.</li>
+    <li><strong>Varvräknare</strong>: haptik vid räkning; lokalt.</li>
+    <li><strong>Parkering</strong>: plats i förgrunden (lokal), kamera valfri.</li>
+  </ul>
+
+  <h2>Support</h2>
+  <p>Kontakt: <code>support@appfactory.local</code> (ersätt med verklig adress vid publicering).
+  Återställning av köp sker via "Återställ köp" i appen (RevenueCat).</p>
+
+  <h2>Publicering</h2>
+  <p>Domän/URL för denna sida är ett <strong>HUMAN-gate</strong>: ägaren väljer domän och publicerar.
+  Ingen hemlighet eller nyckel lagras i detta repo.</p>
+
+  <footer>© APP_FACTORY. Lokal-first. Inga servrar, ingen inloggning.</footer>
+</body>
+</html>
