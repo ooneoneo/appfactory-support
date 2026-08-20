@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integritetspolicy — APP_FACTORY</title>
+  <link rel="canonical" href="https://ooneoneo.github.io/appfactory-support/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://ooneoneo.github.io/appfactory-support/privacy-en.html" />
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1d1d1f; line-height: 1.6; }
+    h1 { color: #2356C4; } h2 { margin-top: 2rem; color: #2356C4; }
+    code { background: #f2f2f7; padding: 2px 4px; border-radius: 4px; }
+    footer { margin-top: 3rem; font-size: 0.85rem; color: #6e6e73; }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #2356C4; margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/index.html">Hem</a>
+    <a href="/privacy.html">Integritet (SV)</a>
+    <a href="/privacy-en.html">Privacy (EN)</a>
+    <a href="/support.html">Support</a>
+  </nav>
+
+  <h1>Integritetspolicy</h1>
+  <p><strong>Senast uppdaterad:</strong> 2026-08-20.</p>
+
+  <h2>Vilka appar omfattas</h2>
+  <p>APP_FACTORY är en samling fristående verktygsappar för iOS och Android, utvecklade
+  och distribuerade av <code>Arment Asllani</code> under varumumet APP_FACTORY. F
+  närvarar omfattar denna policy följande appar (”Apparna”):</p>
+  <ul>
+    <li><strong>A01</strong> Skift &amp; Lön – Arbetsschema</li>
+    <li><strong>A02</strong> Kvitto &amp; Garanti</li>
+    <li><strong>A03</strong> Abonnemang – Kostnadskoll</li>
+    <li><strong>A04</strong> Intervalltimer – Träning</li>
+    <li><strong>A05</strong> Packlista – Resa &amp; Semester</li>
+    <li><strong>A06</strong> Varvräknare – Sticka &amp; Virka</li>
+    <li><strong>A07</strong> Parkering – Hitta bilen</li>
+  </ul>
+
+  <h2>Lokal-först (Local-first)</h2>
+  <p>Alla Appar är <strong>lokala</strong>. Dina uppgifter (skift, kvitton, prenumerationer,
+  träningspass, listor, projekt, parkeringsplatser) lagras <strong>enbart på din egen enhet</strong>
+  via lokal SQLite. Ingen inloggning krävs och ingen användardata skickas till våra servrar.</p>
+
+  <h2>Data vi samlar in</h2>
+  <p>Vi har ingen backend. Data som Apparna själva hanterar:</p>
+  <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <thead>
+      <tr><th>Datatyp</th><th>Appar</th><th>Syfte</th><th>Spårning?</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Köp / IAP</td>
+        <td>A01–A07</td>
+        <td>Validering av Pro-uppgradering via RevenueCat / Apple App Store.</td>
+        <td>Nej</td>
+      </tr>
+      <tr>
+        <td>Identifierare (anon användar-id)</td>
+        <td>A01–A07</td>
+        <td>Entitlement-validering (Pro/icke-Pro) via RevenueCat.</td>
+        <td>Nej</td>
+      </tr>
+      <tr>
+        <td>Kamera (bilder)</td>
+        <td>A02, A07</td>
+        <td>Endast när du själv fotar ett kvitto eller fordon. Sparas lokalt.</td>
+        <td>Nej</td>
+      </tr>
+      <tr>
+        <td>Plats (GPS, förgrund)</td>
+        <td>A07</td>
+        <td>Endast när du parkerar (WhenInUse). Används för avstånd till bilen.</td>
+        <td>Nej</td>
+      </tr>
+      <tr>
+        <td>Påminnelser/APNs-token</td>
+        <td>A01, A03</td>
+        <td>Endast om du aktivt slår på påminnelser. Kan stängas av i appen.</td>
+        <td>Nej</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Vi samlar INTE in</h2>
+  <ul>
+    <li>Namn, e-post, telefonnummer (om inte du frivilligt kontaktar oss via support).</li>
+    <li>Annons-id / spårnings-id (vi använder inga annons-SDK:er).</li>
+    <li>Webbhistorik, sökhistorik.</li>
+    <li>Diagnostikdata (vi skickar inga crash-rapporter eller prestationsdata).</li>
+    <li>Hälso- eller träningsdata (lagras endast lokalt på din enhet).</li>
+    <li>Kontakter, användargenererat innehåll utanför appen.</li>
+  </ul>
+
+  <h2>Tredjepart</h2>
+  <ul>
+    <li><strong>Apple App Store / StoreKit</strong> — hanterar köp och återställning.</li>
+    <li><strong>RevenueCat</strong> (<a href="https://revenuecat.com">revenuecat.com</a>) —
+        hanterar entitlement-validering för Pro-funktioner.</li>
+    <li><strong>Expo / EAS</strong> — bygger och distribuerar appen.</li>
+    <li><strong>GitHub Pages</strong> — servar denna webbplats.</li>
+  </ul>
+  <p>Dessa tredjeparter har sina egna integritetspolicyer; vi rekommenderar att du läser dem.</p>
+
+  <h2>Barn</h2>
+  <p>Apparna riktar sig inte till barn under 13 år och vi samlar inte medvetet in data från barn.</p>
+
+  <h2>Dina rättigheter</h2>
+  <p>Eftersom all data är lokal kan du när som helst radera appen (tar bort all lokal data).
+  För Pro-köp: använd "Återställ köp" i appen (RevenueCat) eller App Store → Inställningar → Köp.</p>
+
+  <h2>Ändringar</h2>
+  <p>Vi kan uppdatera denna policy. Den senaste versionen finns alltid på denna sida.</p>
+
+  <h2>Kontakt</h2>
+  <p>Integritetsfrågor: <code>support@appfactory.local</code> (ersätt vid publicering).</p>
+
+  <footer>
+    <p>APP_FACTORY · ooneoneo · 2026</p>
+  </footer>
+</body>
+</html>
