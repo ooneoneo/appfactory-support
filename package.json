@@ -1,0 +1,9 @@
+{
+  "name": "appfactory-support",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static privacy + support site shared by all APP_FACTORY utilities. Not an app backend.",
+  "scripts": {
+    "serve": "npx --yes serve ."
+  }
+}
